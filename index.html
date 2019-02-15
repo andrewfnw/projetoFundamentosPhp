@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<div align="center">
+			<h1 >Livraria Paraibana</h1>
+		</div>
+		<div align="center">
+			<form action="mainLivraria.php" method="post" >
+				<input type="submit" name="operacaoLivraria" value="Listar Livros">
+			</form>
+		</div>
+		<div align="center">
+			<h3 >Cadastro de Livros</h3>
+			<form action="mainLivraria.php" method="post" >
+				Titulo: <input type="text" name="nome"><br>
+				Autor: <input type="text" name="autor"><br>
+				Edicao: <input type="text" name="edicao"><br>
+				Editora: <input type="text" name="editora"><br>
+				Genero: <input type="text" name="genero"><br>
+				Disciplina(Opcional): <input type="text" name="disciplina"><br>
+				Quantidade: <input type="text" name="quantidade"><br>
+				Preco: <input type="text" name="preco"><br>
+				<input type="radio" name="tipoLivro" value="Livro"/>Livro Tradicional<br>
+				<input type="radio" name="tipoLivro" value="LivroEscolar"/>Livro Educacional<br><br>
+				<input type="submit" name="operacaoLivraria" value="Cadastrar novo livro">
+			</form>
+		</div>
+		<div align="center">
+			<h3 >Remocao de Livros</h3>
+			<form action="mainLivraria.php" method="post" >
+				Nome do livro: <input type="text" name="nomeLivroRemover"><br><br>
+				<input type="submit" name="operacaoLivraria" value="Remover livro">
+			</form>
+		</div>
+	</body>
+</html>
